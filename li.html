@@ -26,8 +26,6 @@
     <div class="container">
       <h1 class="logo"> <a href="" title=""> <img id="light-logo" src="style/images/logo1.png" alt=" " title="开心每一天！"> <img id="dark-logo" src="style/images/logo2.png" alt=" " title="注意休息哦！"> </a> </h1>
     
-<!-- 右上角搜索♥ 	 <div class="search"> <i class="s-btn off fa fa-search"  ></i>   </div>-->
-
 <!-- 日间夜间模式♥ -->	
       <div class="darkmode"> <a href="javascript:switchNightMode()" target="_self" ><i class="fa fa-moon-o"></i></a> </div>
 
@@ -50,53 +48,6 @@
       </nav>
 
 
-<!-- 时间♥ -->	
- <div class="submit fr">
- <div id="time"  class="a transition"> 
-<p id="logInfo"></p>
-<script>
-function getCurDate() {
-    var d = new Date();
-    var week;
-    switch (d.getDay()) {
-        case 0: week = "星期日"; break;
-        case 1: week = "星期一"; break;
-        case 2: week = "星期二"; break;
-        case 3: week = "星期三"; break;
-        case 4: week = "星期四"; break;
-        case 5: week = "星期五"; break;
-        case 6: week = "星期六"; break;
-    }
-    var years = d.getFullYear();
-    var month = add_zero(d.getMonth() + 1);
-    var days = add_zero(d.getDate());
-    var hours = add_zero(d.getHours());
-    var minutes = add_zero(d.getMinutes());
-    var seconds = add_zero(d.getSeconds());
-    var ndate = years + "年" + month + "月" + days + "日 " + hours + ":" + minutes + ":" + seconds + " " + week;
-    var divT = document.getElementById("logInfo");
-    divT.innerHTML = ndate;
-}
-
-function add_zero(temp) {
-    return temp < 10 ? "0" + temp : temp.toString();
-}
-
-// 初始化时间显示
-document.addEventListener('DOMContentLoaded', function() {
-    getCurDate();
-    setInterval(getCurDate, 1000);
-    
-    // 添加点击事件监听
-    document.getElementById('logInfo').addEventListener('click', function() {
-        window.open('https://caiyunai.com/h5/', '_blank');
-    });
-});
-</script>
- </div>
- </div>
-
-
 </header>
 
 
@@ -104,7 +55,6 @@ document.addEventListener('DOMContentLoaded', function() {
 <div id="mask"></div>
 <p class="index-breadcrumb"></p>
 <div id="banner-bear" class="preserve3d csstransforms3d">
-  <p class="typing web-font transition"> 山中何事，松花酿酒，春水煎茶  </p>
 
 
 <!--搜索框♥ -->	
@@ -157,21 +107,21 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="items">
           <div class="row">
             <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="AI"></i></a> <a class="a" href="https://chat.deepseek.com" target="_blank" title="DeepSeek - 探索未至之境"> <img src="uploads/ds.jpg" alt="" title=" ">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://chat.deepseek.com" target="_blank" title="DeepSeek - 探索未至之境"> <img src="uploads/ds.jpg" alt="" title=" ">
                 <h3>Deepseek</h3>
                 <p>杭州深度求索人工智能基础技术研究有限公司</p>
                 </a> </div>
             </div>
 
 <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="AI"></i></a> <a class="a" target="_blank" href="https://bot.n.cn" title=""> <img src="uploads/nm.jpg" alt="" title="">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" target="_blank" href="https://bot.n.cn" title=""> <img src="uploads/nm.jpg" alt="" title="">
                 <h3>纳米AI</h3>
                 <p>纳米AI搜索是三六零集团研发的AI搜索产品</p>
                 </a> </div>
             </div>
 
 <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="AI"></i></a> <a class="a" href="https://search.chongbuluo.com" title="" target="_blank" > <img src="uploads/cbl.png" alt="" title="">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://search.chongbuluo.com" title="" target="_blank" > <img src="uploads/cbl.png" alt="" title="">
                 <h3>虫部落快搜</h3>
                 <p>聚合国内外综合搜索、垂直搜索和 AI搜索。精准搜索,便捷交互!</p>
                 </a> </div>
@@ -180,14 +130,14 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="AI"></i></a> <a class="a" href="https://ai-bot.cn/" title="" target="_blank" > <img src="uploads/ai.png" alt="" title="">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://ai-bot.cn/" title="" target="_blank" > <img src="uploads/ai.png" alt="" title="">
                 <h3>AI工具集</h3>
                 <p>国内外AI工具导航大全。</p>
                 </a> </div>
             </div>
 
 <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="工具"></i></a> <a class="a" href="https://mail.qq.com/" title="" target="_blank" > <img src="uploads/qq.png" alt="" title=" ">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://mail.qq.com/" title="" target="_blank" > <img src="uploads/qq.png" alt="" title=" ">
                 <h3>QQ邮箱</h3>
                 <p>QQ邮箱,为亿万用户提供高效稳定便捷的电子邮件服务。</p>
                 </a> </div>
@@ -201,14 +151,14 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
 
 <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="设计"></i></a> <a class="a" href="https://www.canva.cn" title=" " target="_blank" > <img src="uploads/kh.png" alt=" " title=" ">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://www.canva.cn" title=" " target="_blank" > <img src="uploads/kh.png" alt=" " title=" ">
                 <h3>可画</h3>
                 <p>在线设计协作平台Canva提供了海量的设计模板。</p>
                 </a> </div>
             </div>
 
 <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="设计"></i></a> <a class="a" href="https://www.gaoding.com" title=" " target="_blank" > <img src="uploads/gd.png" alt=" " title=" ">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://www.gaoding.com" title=" " target="_blank" > <img src="uploads/gd.png" alt=" " title=" ">
                 <h3>稿定</h3>
                 <p>让更多人和企业轻松掌控设计，创造价值。</p>
                 </a> </div>
@@ -227,7 +177,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="二维码"></i></a> <a class="a" href="https://cli.im" title="" target="_blank" > <img src="uploads/cl.png" alt=" " title=" ">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://cli.im" title="" target="_blank" > <img src="uploads/cl.png" alt=" " title=" ">
                 <h3>草料二维码</h3>
                 <p>一站式二维码生成工具,可搭建二维码信息系统。</p>
                 </a> </div>
@@ -282,14 +232,14 @@ document.addEventListener('DOMContentLoaded', function() {
           <div class="row">
 
 <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="破解资源"></i></a> <a class="a" href="https://www.52pojie.cn" title=" " target="_blank" > <img src="uploads/wapj.png" alt=" " title=" ">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://www.52pojie.cn" title=" " target="_blank" > <img src="uploads/wapj.png" alt=" " title=" ">
                 <h3>吾爱破解</h3>
                 <p>论坛聚焦软件安全、编程开发等技术领域,打造技术爱好者交流平台。</p>
                 </a> </div>
             </div>
 
 <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="软件资源"></i></a> <a class="a" href="https://bbs.pcbeta.com/forum-521-1.html" title=" " target="_blank" > <img src="uploads/yj.png" alt=" " title=" ">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://bbs.pcbeta.com/forum-521-1.html" title=" " target="_blank" > <img src="uploads/yj.png" alt=" " title=" ">
                 <h3>远景资源区</h3>
                 <p>前沿科技与智慧生态的极客社区。</p>
                 </a> </div>
@@ -328,7 +278,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="items">
           <div class="row">
             <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="信息资讯"></i></a> <a class="a" href="https://www.kdocs.cn/l/ca6zfETArLKx" title=" " target="_blank" > <img src="uploads/zyzh.png" alt=" " title=" ">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://www.kdocs.cn/l/ca6zfETArLKx" title=" " target="_blank" > <img src="uploads/zyzh.png" alt=" " title=" ">
                 <h3>资源整合</h3>
                 <p>一个面向社工行业资源整合汇总的信息发布平台。</p>
                 </a> </div>
@@ -380,28 +330,28 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="items">
           <div class="row">
             <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="文字校对"></i></a> <a class="a" href="https://xiezuocat.com" title="" target="_blank" > <img src="uploads/mt.jpg" alt=" " title=" ">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://xiezuocat.com" title="" target="_blank" > <img src="uploads/mt.jpg" alt=" " title=" ">
                 <h3>秘塔写作猫</h3>
                 <p>上海秘塔网络科技有限公司产品,提供错别字检查、AI写作服务。</p>
                 </a> </div>
             </div>
 
 <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="问卷收集"></i></a> <a class="a" href="https://www.wjx.cn" title="" target="_blank" > <img src="uploads/wjx.png" alt="" title="">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://www.wjx.cn" title="" target="_blank" > <img src="uploads/wjx.png" alt="" title="">
                 <h3>问卷星</h3>
                 <p>问卷调查、考试、评估、表单、测评和投票的数据收集分析管理平台。</p>
                 </a> </div>
             </div>
 
 <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="问卷收集"></i></a> <a class="a" href="https://www.wjx.cn" title="" target="_blank" > <img src="uploads/jsj.png" alt="" title="">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://www.wjx.cn" title="" target="_blank" > <img src="uploads/jsj.png" alt="" title="">
                 <h3>金数据</h3>
                 <p>人人可用的数据平台。</p>
                 </a> </div>
             </div>
 
 <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="文件传输"></i></a> <a class="a" href="https://www.wjx.cn" title="" target="_blank" > <img src="uploads/wss.png" alt="" title="">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://www.wjx.cn" title="" target="_blank" > <img src="uploads/wss.png" alt="" title="">
                 <h3>文叔叔</h3>
                 <p>一款可以将任意文件，简单、安全、极速传给你朋友的工具。</p>
                 </a> </div>
@@ -419,14 +369,14 @@ document.addEventListener('DOMContentLoaded', function() {
         <div class="items">
           <div class="row">
             <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="书籍"></i></a> <a class="a" href="https://zh.z-lib.gs" title="" target="_blank" > <img src="uploads/library.png" alt=" " title=" ">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://zh.z-lib.gs" title="" target="_blank" > <img src="uploads/library.png" alt=" " title=" ">
                 <h3>Z-Library</h3>
                 <p>全球最大的免费的电子图书馆。</p>
                 </a> </div>
             </div>
 
 <div class="col-xs-6 col-sm-4 col-md-3">
-              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"><i class="autoleft fa fa-angle-right" title="书籍"></i></a> <a class="a" href="https://zh.annas-archive.org" title="" target="_blank" > <img src="uploads/anna.jpg" alt="" title="">
+              <div class="item"> <a class="link" target="_self" href="javascript:;" rel="nofollow"></i></a> <a class="a" href="https://zh.annas-archive.org" title="" target="_blank" > <img src="uploads/anna.jpg" alt="" title="">
                 <h3>安娜档案馆</h3>
                 <p>整合Z-Library、Library Genesis等资源，提供海量书籍和论文获取。</p>
                 </a> </div>
