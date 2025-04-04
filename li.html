@@ -569,6 +569,16 @@ function switchNightMode() {
 }
 </script>
 
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const body = document.body;
+        if (body.classList.contains('night')) {
+            body.classList.remove('night');
+        }
+        console.log('页面加载时 body 是否包含 night 类:', body.classList.contains('night'));
+    });
+</script>
+	
 <!--[if lt IE 9]><script src="style/js/html5-css3.js"></script><![endif]-->
 </body>
 </html>
