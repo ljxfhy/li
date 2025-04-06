@@ -168,6 +168,79 @@ body{background:#f1f5f8;color:#6b7386;}
 .m-nav ul li>ul li {background:rgba(0,0,0,0.15);}
 .m-nav ul li>ul li a {border-bottom:1px solid rgba(255,255,255,0.05);opacity:0.8;font-size:14px;text-indent:1em}
 
+
+/*移动端自适应*/
+@media only screen and (max-width: 768px) {
+    .header, .header .logo {
+        height: 46px; /* 进一步调整头部高度 */
+    }
+    .header .logo a {
+        max-width: 100px; /* 缩小 logo 宽度 */
+    }
+    .nav-bar {
+        display: none; /* 隐藏导航栏 */
+    }
+    .m-btn {
+        display: block; /* 显示移动端菜单按钮 */
+    }
+}
+@media (max-width: 767px) {
+    .primary-menus {
+        float: left;
+        margin-left: 0;
+        width: 90%; /* 调整菜单宽度 */
+        top: 60%;
+    }
+    .primary-menus ul li {
+        padding: 0 5px;
+        font-size: 13px;
+        height: 28px;
+        line-height: 24px;
+        margin-right: 6px;
+    }
+    .primary-menus ul li:first-child {
+        display: none; /* 隐藏第一个菜单项 */
+    }
+    .primary-menus .left-cont input {
+        height: 34px;
+        line-height: 14px;
+        font-size: 13px;
+        padding: 10px 6em 10px 10px;
+        border-radius: 0 3px 3px 3px;
+    }
+    .primary-menus .left-cont button {
+        height: 34px;
+        line-height: 34px;
+        width: 6em;
+        font-size: 12px;
+        border: none;
+        border-radius: 2px;
+        margin-right: -2px;
+    }
+}
+@media screen and (max-width: 991px) {
+    .content-sidebar {
+        display: none; /* 隐藏侧边栏 */
+    }
+    .part .tt {
+        top: 55px!important;
+    }
+    .part .tt a {
+        padding-top: 5px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .col-xs-6, .col-sm-4, .col-md-3 {
+        width: 100%; /* 让列在小屏幕下占满整行 */
+    }
+}
+@media only screen and (max-width: 768px) {
+    .ad_zone .ad1, .ad_zone .m-ad1, .ad_zone .ad2, .ad_zone .m-ad2, .ad_zone .ad3, .ad_zone .m-ad3, .ad_zone .ad4, .ad_zone .m-ad4 {
+        height: auto; /* 让广告高度自适应 */
+        line-height: normal;
+    }
+}
+
 /*搜索和黑暗模式*/
 .search,.darkmode {float:right;margin-left:15px;position:relative;}
 .darkmode i{font-weight: 900;}
