@@ -242,10 +242,10 @@ body{background:#f1f5f8;color:#6b7386;}
 }
 .time-display {
     position: absolute;
-    top: 10px; /* 距离顶部的距离 */
-    right: 10px; /* 距离右侧的距离 */
+    top: 3px; /* 距离顶部的距离 */
+    right: 3px; /* 距离右侧的距离 */
     white-space: nowrap; /* 防止时间换行 */
-    font-size: 14px; /* 字体大小 */
+    font-size: 10px; /* 字体大小 */
     color: #333; /* 字体颜色 */
     z-index: 999; /* 确保时间显示在其他元素之上 */
 }
