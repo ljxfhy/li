@@ -247,12 +247,11 @@ body{background:#f1f5f8;color:#6b7386;}
 }
 
 /* 在手机端（屏幕宽度小于等于 768px）隐藏时间 */
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1200px) {
     .time-display {
         display: none;
     }
 }
-
 /*搜索和黑暗模式*/
 .search,.darkmode {float:right;margin-left:15px;position:relative;}
 .darkmode i{font-weight: 900;}
