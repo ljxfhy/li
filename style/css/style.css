@@ -240,22 +240,16 @@ body{background:#f1f5f8;color:#6b7386;}
         line-height: normal;
     }
 }
+
+/* 在电脑屏幕上正常显示时间 */
 .time-display {
-    position: absolute;
-    top: 3px; /* 距离顶部的距离 */
-    right: 3px; /* 距离右侧的距离 */
-    white-space: nowrap; /* 防止时间换行 */
-    font-size: 10px; /* 字体大小 */
-    color: #333; /* 字体颜色 */
-    z-index: 999; /* 确保时间显示在其他元素之上 */
+    display: block;
 }
 
-/* 响应式设计，当屏幕宽度小于 768px 时的样式 */
+/* 在手机端（屏幕宽度小于等于 768px）隐藏时间 */
 @media only screen and (max-width: 768px) {
     .time-display {
-        font-size: 12px; /* 缩小字体大小 */
-        top: 5px; /* 调整距离顶部的距离 */
-        right: 5px; /* 调整距离右侧的距离 */
+        display: none;
     }
 }
 
